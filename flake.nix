@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
     appimage-file-beta = {
       url = "https://github.com/zen-browser/desktop/releases/download/1.7.3b/zen-x86_64.AppImage";
       flake = false;
