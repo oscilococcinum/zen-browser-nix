@@ -3,39 +3,27 @@
     "appimage-file-beta": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-IOeTokpWqwUl7vWDrx+zN76vgePnPaUj0WPYrDKO5xY=",
+        "narHash": "sha256-c0c1yjhpidpmSENSqWDD/J/l4fLQ8nm0ZUTBKO+VfsE=",
         "type": "file",
-        "url": "https://github.com/zen-browser/desktop/releases/download/1.7.3b/zen-x86_64.AppImage"
+        "url": "https://github.com/zen-browser/desktop/releases/download/1.17.7b/zen-x86_64.AppImage"
       },
       "original": {
         "type": "file",
-        "url": "https://github.com/zen-browser/desktop/releases/download/1.7.3b/zen-x86_64.AppImage"
-      }
-    },
-    "appimage-file-twilight": {
-      "flake": false,
-      "locked": {
-        "narHash": "sha256-lHjcqtHoNZu1/7HTsTziH8f92EopTKk5Z8kwEIqb52A=",
-        "type": "file",
-        "url": "https://github.com/zen-browser/desktop/releases/download/twilight/zen-x86_64.AppImage"
-      },
-      "original": {
-        "type": "file",
-        "url": "https://github.com/zen-browser/desktop/releases/download/twilight/zen-x86_64.AppImage"
+        "url": "https://github.com/zen-browser/desktop/releases/download/1.17.7b/zen-x86_64.AppImage"
       }
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1739446958,
-        "narHash": "sha256-+/bYK3DbPxMIvSL4zArkMX0LQvS7rzBKXnDXLfKyRVc=",
+        "lastModified": 1751274312,
+        "narHash": "sha256-/bVBlRpECLVzjV19t5KMdMFWSwKLtb5RyXdjz3LJT+g=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2ff53fe64443980e139eaa286017f53f88336dd0",
+        "rev": "50ab793786d9de88ee30ec4e4c24fb4236fc2674",
         "type": "github"
       },
       "original": {
         "owner": "NixOS",
-        "ref": "nixos-unstable",
+        "ref": "nixos-24.11",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -43,7 +31,6 @@
     "root": {
       "inputs": {
         "appimage-file-beta": "appimage-file-beta",
-        "appimage-file-twilight": "appimage-file-twilight",
         "nixpkgs": "nixpkgs"
       }
     }
