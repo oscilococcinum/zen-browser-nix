@@ -1,8 +1,8 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     appimage-file-beta = {
-      url = "https://github.com/zen-browser/desktop/releases/download/1.17.7b/zen-x86_64.AppImage";
+      url = "https://github.com/zen-browser/desktop/releases/download/1.17.12b/zen-x86_64.AppImage";
       flake = false;
     };
   };
