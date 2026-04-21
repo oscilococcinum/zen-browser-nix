@@ -1,8 +1,8 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
-    appimage-file-beta = {
-      url = "https://github.com/zen-browser/desktop/releases/download/1.19.2b/zen-x86_64.AppImage";
+    zen-appimage = {
+      url = "https://github.com/zen-browser/desktop/releases/download/1.19.8b/zen-x86_64.AppImage";
       flake = false;
     };
   };
@@ -19,13 +19,13 @@
               config.allowUnfree = true;
             }; rec {
 
-              zen-beta-appimage = pkgs.callPackage (import ./zen-browser/appimage-default.nix) {
-                src = inputs.appimage-file-beta;
+              zen-appimage = pkgs.callPackage (import ./pkg/appimage-default.nix) {
+                src = inputs.zen-appimage;
                 pname = "zen";
-                version = "beta";
+                version = "1.19.8b";
               };
 
-              default = zen-beta-appimage;
+              default = zen-appimage;
             };
         }) [ "x86_64-linux" ]
       );
